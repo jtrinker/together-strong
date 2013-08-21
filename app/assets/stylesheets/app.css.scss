@@ -4,6 +4,7 @@
 
 .video_column {
 	background-color: #484746;
+	padding-bottom: 16px;
 }
 
 img.video {
@@ -24,4 +25,56 @@ img.video {
 .vid-desc {
 	color: #ede8d1; 
 	text-align: center;
+}
+
+.ribbon-row {
+	background-color: #fff;
+	border-top-style: solid;
+	border-top-width: 8px;
+	border-top-color: #d0112b;
+	border-bottom-style: solid;
+	border-bottom-width: 8px;
+	border-bottom-color: #d0112b;
+	padding: 30px 0 30px 0;
+
+	.care-border {
+  	border-top-style: solid;
+	  border-top-width: 3px;
+	  border-top-color: #000;
+	  border-bottom-style: solid;
+	  border-bottom-width: 3px;
+	  border-bottom-color: #000;
+	  float: left !important;
+	  padding-left: 1em !important;
+	  padding-right: 1em !important;
+	}
+
+.center {
+	text-align: center;
+}
+
+	h2.care-advocate {
+		text-transform: uppercase;
+		font-weight: 400;
+		letter-spacing: 3px;
+		color: #cf0a2c;
+		margin-bottom: 0px;
+		font-size: emCalc(36) !important;
+	}
+
+	p.ribbon-text {
+		text-align: center;
+	}
+
+	.phone-number {
+		margin-bottom: 11px;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.has-border {
+	border-right-style: solid;
+	border-right-width: 2px;
+	border-right-color: #d9cf99;
+	}
 }
