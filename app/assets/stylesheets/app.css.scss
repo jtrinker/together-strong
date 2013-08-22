@@ -45,7 +45,10 @@ $em-base: 16 !default;
 }
 
 
-
+.row {
+	width: 73.5%;
+	max-width: 67em !important;
+}
 .main-header {
   
 }
@@ -75,7 +78,8 @@ img.video {
 	text-align: center;
 }
 
-.ribbon {
+#ribbon {
+	width: 100% !important;
 	background-color: #fff;
 	border-top-style: solid;
 	border-top-width: 8px;
@@ -138,7 +142,7 @@ img.video {
 }
 
 .strong-future {
-	font-size: emCalc(50) !important;
+	font-size: remCalc(50) !important;
 	color: #cf0a2c;
 	margin-bottom: -4px;
 	margin-top: -20px;
@@ -174,10 +178,16 @@ span.red-bold {
 	padding-bottom: emCalc(50);
 }
 
-@media only screen and (min-width: 768px) {
-	.has-border {
-	border-right-style: solid;
-	border-right-width: 2px;
-	border-right-color: #d9cf99;
+// @media only screen and (min-width: 768px) {
+// 	.has-border {
+// 		border-right-style: solid;
+// 		border-right-width: 2px;
+// 		border-right-color: #d9cf99;
+// 	}
+// }
+
+@media only screen and (max-width: 768px) {
+	.row {
+		width: 100% !important;
 	}
 }
