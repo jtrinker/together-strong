@@ -47,10 +47,11 @@ $em-base: 16 !default;
 
 .row {
 	width: 73.5%;
-	max-width: 67em !important;
+	max-width: 72em !important;
 }
+
 .main-header {
-  
+
 }
 
 .video_column {
@@ -162,7 +163,6 @@ span.red-bold {
 }
 
 .triangle {
-
 }
 
 .footer {
@@ -178,16 +178,67 @@ span.red-bold {
 	padding-bottom: emCalc(50);
 }
 
-// @media only screen and (min-width: 768px) {
-// 	.has-border {
-// 		border-right-style: solid;
-// 		border-right-width: 2px;
-// 		border-right-color: #d9cf99;
-// 	}
-// }
+@media only screen and (min-width: 768px) {
+	.has-border {
+		border-right-style: solid;
+		border-right-width: 2px;
+		border-right-color: #d9cf99;
+	}
+}
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 1300px) {
 	.row {
 		width: 100% !important;
 	}
 }
+// Go OVER this and it will break mobile, go into desktop
+@media only screen and (max-width: 768px) {
+	.triangle {
+		width: 233px;
+		height: 209px;
+	}
+	.care-advocates {
+		margin-bottom: 40px;
+	}
+	#ribbon .care-border {
+		border-top: none;
+		border-bottom: none;
+	}
+}
+
+@media all and (max-width: 1386px) and (min-width: 1300px) {
+	.ribbon-corner {
+		display: block;
+  	position: absolute;
+		left: 1px;
+		bottom: -80px;
+		width: 72px;
+  }
+
+    .ribbon-corner-right {
+    display: block;
+  	position: absolute;
+		right: 1px;
+		bottom: -80px;
+		width: 72px;
+  }
+}
+
+@media all and (max-width: 1300px) {
+	.ribbon-corner {
+		display: none;
+	}
+	.ribbon-corner-right {
+		display: none;
+	}
+}
+@media all and (min-width: 1386px) {
+	.ribbon-corner {
+		display: none;
+	}
+	.ribbon-corner-right {
+		display: none;
+	}
+}
+
